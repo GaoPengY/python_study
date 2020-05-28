@@ -1,0 +1,67 @@
+<!--
+ * @Descripttion:
+ * @version:
+ * @Date: 2020-03-20 23:54:03
+ * @LastEditTime: 2020-03-21 21:29:55
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页小游戏</title>
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="k.js"></script>
+</head>
+<body>
+    <!--Title-->
+    <div class="title">
+
+        <span style="color: black;padding-left: 20px;">Never</span>
+        <span style="color: green;">Give</span>
+        <span style="color: black;" >It</span>
+        <span style="color: green;" >Up</span>
+        <span style="font-size: large;color: orange;">---Gao Peng</span>
+    </div>
+
+    <!--游戏界面-->
+    <div class="gamebody">
+        <!--Score and Time-->
+        <div class="SandT">
+            <span>Score:</span>
+            <span id="score">00</span>
+            <span style="margin-left: 60px;">Time:</span>
+            <span id="time" >00秒</span>
+        </div>
+        <hr>
+
+        <!--游戏主体-->
+        <div >
+            <!--血量-->
+            <div id = "health" style="position: absolute;left: 20px">
+                <img src="img/health.png" class="healthimg" >
+                <img src="img/health.png" class="healthimg" >
+                <img src="img/health.png" class="healthimg" >
+            </div>
+            <!--过关或者失败的信息-->
+            <div id="info">
+
+            </div>
+            <!--人物-->
+            <div id="character">
+                <img src="img/prople.jpg" id="man" >
+            </div>
+            <!--障碍物-->
+            <div id="cloakbody" class="cloakbody">
+                <canvas id="cloakcan" width="10" height="50"></canvas>
+            </div>
+
+        </div>
+    </div>
+    <!--下方控制台-->
+    <div class="console">
+        <button onclick="run()" class="beginBtn" >开始</button>
+        <button onclick="move()" class="beginBtn">跳跃</button>
+    </div>
+</body>
+</html>
