@@ -41,9 +41,37 @@ print(total)
 # 身高： 1.76m
 # 体重： 65.3kg
 # python在定义变量时不需要指定数据类型
+# 运行时解释器根据等号右侧的数据自动推导出，变量中保存的数据类型
+# 可以使用type函数查看变量中保存的数据类型
+# str 字符串
 name = "小明"
+print(type(name))
+# int 整型
 age = 18
-print
-male = "man"
+print(type(age))
+# bool False or True
+male = True
+print(type(male))
+# float 浮点类型
 height = 1.76
+print(type(height))
 weight = 65.3
+print(type(weight))
+
+# python中的变量可分为两种：数字型和非数字型
+# 数字：
+# 整形
+# 浮点
+# 布尔(非零即真)
+# 复数形(complex) 主要用于科学计算
+
+# 非数字
+# 字符串
+# 列表
+# 元组
+# 字典
+
+# 扩展: n的x次方的计算
+n = 3
+x = 5
+print(n ** x)
